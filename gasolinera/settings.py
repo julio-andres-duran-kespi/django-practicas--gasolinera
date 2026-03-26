@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'appCombustibles.apps.AppcombustiblesConfig',
     'appUsuarios.apps.AppusuariosConfig',
     'appVentas.apps.AppventasConfig',
+    'appMain',
 ]
 
 MIDDLEWARE = [
@@ -59,7 +60,7 @@ ROOT_URLCONF = 'gasolinera.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['templates'],
+        'DIRS': [ BASE_DIR / 'templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
