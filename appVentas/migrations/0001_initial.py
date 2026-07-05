@@ -24,7 +24,7 @@ class Migration(migrations.Migration):
                 ('fecha_hora', models.DateTimeField(auto_now_add=True)),
                 ('cliente', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='appClientes.cliente')),
                 ('combustible', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='appCombustibles.combustible')),
-                ('empleado', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='appUsuarios.usuario')),
+                ('empleado', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='appUsuarios.user')),
             ],
         ),
     ]

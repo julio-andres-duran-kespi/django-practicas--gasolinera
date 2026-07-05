@@ -1,10 +1,14 @@
 from django.contrib import admin
-from appUsuarios.models import Usuario
-# Register your models here.
+from django.contrib.auth.admin import UserAdmin
+from django.contrib.auth import get_user_model
+from appUsuarios.models import User
+
+User = get_user_model()
+
+admin.site.register(User)
 
 
-
-@admin.register(Usuario)
 class UsuarioAdmin(admin.ModelAdmin):
-    list_display = ('id', 'nombre', 'usuario', 'rol', 'creado_en')
-    search_fields = ('nombre', 'usuario')
+    list_display = ('id', 'email', 'full_name', 'is_active', 'created_at')
+    search_fields = ('email', 'full_name')
+

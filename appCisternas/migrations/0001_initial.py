@@ -22,7 +22,7 @@ class Migration(migrations.Migration):
                 ('fecha_ingreso', models.DateTimeField(auto_now_add=True)),
                 ('descripcion', models.TextField(blank=True, null=True)),
                 ('tipo_combustible', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='appCombustibles.combustible')),
-                ('usuario', models.ForeignKey(null=True, on_delete=django.db.models.deletion.SET_NULL, to='appUsuarios.usuario')),
+                ('usuario', models.ForeignKey(null=True, on_delete=django.db.models.deletion.SET_NULL, to='appUsuarios.user')),
             ],
         ),
     ]
