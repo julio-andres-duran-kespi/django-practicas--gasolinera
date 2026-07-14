@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Inicio{% endblock %}</title>
+</head>
+<body>
+    <header>
+        {% block header %}
+        <h1>Inicio</h1>
+        {% endblock %}
+    </header>
+
+    <main>
+        {% block content %}
+        <p>Bienvenido a la página de inicio.</p>
+        {% endblock %}
+    </main>
+
+    <footer>
+        {% block footer %}
+        <p>© 2026 Gasolinera</p>
+        {% endblock %}
+    </footer>
+</body>
+</html>

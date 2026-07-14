@@ -5,7 +5,8 @@ from . import views
 app_name = 'appUsuarios'
 
 urlpatterns = [
-    path('login/', views.login_view, name='login'),
-    path('registro/', views.register_view, name='registro'),
+    path('', views.home, name='home'),
+    path('login/', views.login, name='login'),
+    path('registro/', views.RegistroView.as_view(), name='registro'),
 ]
 
